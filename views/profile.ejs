@@ -58,7 +58,7 @@
       <div class="container">
         <h1>Skeleton</h1>
         <p>Profile (Secured Page) for a starter template for a multi-purpose dynamic website.</p>
-        
+
       </div>
     </div>
 
@@ -70,6 +70,21 @@
 
 
           <h2>Profile (Secured Page)</h2>
+
+          <div class="well">
+            <p class="lead">Local User</p>
+            <strong>id</strong> : <%= user._id %><br />
+            <strong>email</strong> : <%= user.local.username %><br />
+            <strong>password</strong> : <%= user.local.password %><br />
+          </div>
+
+          <div class="well">
+            <p class="lead">Facebook User</p>
+            <strong>id</strong> : <%= user.facebook.id %><br />
+            <strong>token</strong> : <%= user.facebook.token %><br />
+            <strong>email</strong> : <%= user.facebook.email %><br />
+            <strong>name</strong> : <%= user.facebook.name %><br />
+          </div>
 
         </div>
 
